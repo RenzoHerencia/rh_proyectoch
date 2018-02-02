@@ -119,46 +119,12 @@ section.bio p {
 
 /*    boxes   */
 
+section.boxes {
+    display: inline-block;
+}
+
 section.boxes > article {
     position:relative;
-}
-
-section.boxes > article:first-child {
-    background: -moz-linear-gradient(top, rgba(117,90,19,0) 50%, rgba(117,90,19,1) 100%); 
-    background: -webkit-linear-gradient(top, rgba(117,90,19,0) 50%,rgba(117,90,19,1) 100%); 
-    background: linear-gradient(to bottom, rgba(117,90,19,0) 50%,rgba(117,90,19,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00755a13', endColorstr='#755a13',GradientType=0 );
-}
-
-section.boxes > article:first-child:before {
-    background: url(../img/bg_letras.jpg) center top no-repeat;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-}
-
-section.boxes > article:first-child:after {
-    background: -moz-linear-gradient(top, rgba(117,90,19,0) 50%, rgba(117,90,19,1) 100%); 
-    background: -webkit-linear-gradient(top, rgba(117,90,19,0) 50%,rgba(117,90,19,1) 100%); 
-    background: linear-gradient(to bottom, rgba(117,90,19,0) 50%,rgba(117,90,19,1) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00755a13', endColorstr='#755a13',GradientType=0 );
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-}
-
-section.boxes > article:nth-child(2) {
-    background: url(../img/bg_galeria.jpg) center top no-repeat;
-    background-color: #502327
-}
-
-section.boxes > article:last-child {
-    background: url(../img/bg_contacto.jpg) center top no-repeat;
-    background-color: #3e6f36
 }
 
 section.boxes h2, section.boxes p, section.boxes a {
@@ -185,6 +151,182 @@ section.boxes a {
     z-index: 99999
 }
 
-/*    noticias   */
+/*    box letras   */
 
+section.boxes > article:first-child {
+    background-color: #541b0e
+}
 
+section.boxes > article:first-child:before {
+    background: url(../img/bg_letras.jpg) center top no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+section.boxes > article:first-child:after {
+    background: -moz-linear-gradient(top, rgba(84,27,14,0) 40%, rgba(84,27,14,1) 85%);
+    background: -webkit-linear-gradient(top, rgba(84,27,14,0) 40%,rgba(84,27,14,1) 85%);
+    background: linear-gradient(to bottom, rgba(84,27,14,0) 40%,rgba(84,27,14,1) 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00541b0e', endColorstr='#541b0e',GradientType=0 );
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+/*    box galeria   */
+
+section.boxes > article:nth-child(2) {
+    background-color: #502327
+}
+
+section.boxes > article:nth-child(2):before {
+    background: url(../img/bg_galeria.jpg) center top no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+section.boxes > article:nth-child(2):after {
+    background: -moz-linear-gradient(top, rgba(80,35,39,0) 40%, rgba(80,35,39,1) 85%);
+    background: -webkit-linear-gradient(top, rgba(80,35,39,0) 40%,rgba(80,35,39,1) 85%);
+    background: linear-gradient(to bottom, rgba(80,35,39,0) 40%,rgba(80,35,39,1) 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00502327', endColorstr='#502327',GradientType=0 );
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0; 
+}
+
+/*    box contacto   */
+
+section.boxes > article:last-child {
+    background-color: #3e6f36
+}
+
+section.boxes > article:last-child:before {
+    background: url(../img/bg_contacto.jpg) center top no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+section.boxes > article:last-child:after {
+    background: -moz-linear-gradient(top, rgba(62,111,54,0) 40%, rgba(62,111,54,1) 85%);
+    background: -webkit-linear-gradient(top, rgba(62,111,54,0) 40%,rgba(62,111,54,1) 85%);
+    background: linear-gradient(to bottom, rgba(62,111,54,0) 40%,rgba(62,111,54,1) 85%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003e6f36', endColorstr='#3e6f36',GradientType=0 );
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+/*    noticias flex  */
+
+section.noticias {
+    padding: 70px 0;
+    display: block;
+    position: relative
+}
+
+section.noticias h2 {
+    margin: 50px 0;
+    display: block;
+}
+
+section.noticias h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ec1d25;
+    margin-bottom: 15px;
+}
+
+section.noticias a {
+    font-weight: 700;
+    color: #ec1d25;
+}
+
+.container-flex  {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.noticias > div.wrapper > div.container-flex > article {
+    width: 30%;
+}
+
+section.noticias > div.wrapper > div.container-flex:nth-child(2) > article {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ec1d25;
+}
+
+/*    discos y letras flex  */
+
+section.discosletras {
+    padding: 70px 0;
+    display: block;
+    position: relative
+}
+
+section.discosletras h2 {
+    color: #541b0e;
+    margin: 0 0 50px;
+    display: block;
+}
+
+section.discosletras h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #541b0e;
+    margin-top: 20px;
+}
+
+section.discosletras > div.wrapper > div.container-flex > article {
+    width: 150px;    
+}
+
+section.discosletras table {
+    margin-top: 70px;
+    width: 100%;
+    border: 1px solid #541b0e;
+    border-collapse: collapse;
+}
+
+section.discosletras td {
+    padding: 40px;
+}
+
+section.discosletras table tr td h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+section.discosletras ol {
+    margin-left: 20px
+}
+
+section.discosletras ol li {
+    margin-bottom: 15px;
+}
+
+section.discosletras ol li a, section.discosletras ol {
+    color: #541b0e;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+}
