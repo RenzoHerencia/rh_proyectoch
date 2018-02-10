@@ -1,6 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+a {
     -webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
     -ms-transition: all .2s ease-in;
@@ -45,6 +48,20 @@ header a:hover {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 0px;
+    line-height: 0px;
+}
+
+figure {
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
 h1 {
     font-family: 'Lobster', cursive;
     font-size: 72px;
@@ -64,7 +81,6 @@ nav {
     padding: 30px;
     background-color: #ec1d25;
     text-align: center;
-       
 }
 nav ul li a {
     color: #fff;
@@ -130,12 +146,34 @@ section.bio img {
 section.bio span {
     font-family: 'Lobster', cursive;
     color: #ec1d25;
-    font-size: 48px;
+    font-size: 48px;    
 }
 
 section.bio p {    
     margin-top: 30px;
 }
+
+section.bio a {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;   
+    font-weight: 700;
+    color: #ec1d25;
+    font-size: 18px;
+    padding: 7px;
+    margin: 20px 0 0 -7px;
+}
+
+section.bio a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ec1d25;
+}
+
+section.bio a i {
+    margin: 0 5px 0 10px;
+    font-size: 16px;
+}
+
 
 /*    boxes   */
 
@@ -166,10 +204,24 @@ section.boxes p {
 }
 
 section.boxes a {
-    margin-bottom: 60px;
+    padding: 35px 0;
     position: relative;
-    z-index: 99999
+    z-index: 99999;
+    font-family: 'Playfair Display', serif;   
+    font-weight: 700;
+    font-size: 18px;
 }
+
+section.boxes a:hover {
+    text-decoration: none; 
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+section.boxes a i {
+    margin: 0 5px 0 10px;
+    font-size: 16px;
+}
+
 
 /*    box letras   */
 
@@ -276,6 +328,7 @@ section.noticias h3 {
 section.noticias a {
     font-weight: 700;
     color: #ec1d25;
+
 }
 
 .container-flex  {
@@ -307,7 +360,7 @@ section.discosletras h2 {
     display: block;
 }
 
-section.discosletras h3 {
+section.discosletras h3, section.discosletras h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 20px;
@@ -318,6 +371,7 @@ section.discosletras h3 {
 section.discosletras > div.wrapper > div.container-flex > article {
     width: 150px;    
 }
+
 
 section.discosletras table {
     margin-top: 70px;
@@ -330,7 +384,7 @@ section.discosletras td {
     padding: 40px;
 }
 
-section.discosletras table tr td h3 {
+section.discosletras table tr td h4 {
     margin: 0 0 20px;
     font-size: 24px;
 }
@@ -340,7 +394,11 @@ section.discosletras ol {
 }
 
 section.discosletras ol li {
-    margin-bottom: 15px;
+    margin-bottom: 15px;   
+}
+
+section.discosletras ol li a {
+    padding: 4px;
 }
 
 section.discosletras ol li a, section.discosletras ol {
@@ -349,6 +407,13 @@ section.discosletras ol li a, section.discosletras ol {
     font-weight: 700;
     text-decoration: none;
     margin-left: 5px;
+    background-color: transparent;
+    
+}
+
+section.discosletras ol li a:hover {
+    color: #fff;
+    background-color: #541b0e;  
 }
 
 /*   galeria  */
@@ -359,7 +424,7 @@ section.galeria {
     background: -webkit-linear-gradient(top, rgba(80,35,39,1) 0%,rgba(80,35,39,1) 50%,rgba(255,255,255,1) 50%);
     background: linear-gradient(to bottom, rgba(80,35,39,1) 0%,rgba(80,35,39,1) 50%,rgba(255,255,255,1) 50%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#502327', endColorstr='#ffffff',GradientType=0 );
-    padding: 70px 0;
+    padding: 70px 0 0;
 }
 
 section.galeria h2 {
@@ -394,17 +459,17 @@ section.galeria p {
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/arrow_left.svg) !important;
-    width: 25px !important;
-    height: 45px !important;
-    margin-left: -50px !important;
+    background-image: url(../img/arrow_left.svg);
+    width: 25px;
+    height: 45px;
+    margin-left: -50px;
 }
 
 .carousel-control-next-icon {
-    background-image: url(../img/arrow_right.svg) !important;
-    width: 25px !important;
-    height: 45px !important;
-    margin-right: -50px !important;
+    background-image: url(../img/arrow_right.svg);
+    width: 25px ;
+    height: 45px;
+    margin-right: -50px ;
 }
 
 .carousel-indicators .active {
@@ -413,4 +478,343 @@ section.galeria p {
 
 .carousel-indicators li {
     background-color: rgba(149,78,83,.5) !important;
+}
+
+
+/*   videos grid  */
+
+section.videos {
+    padding: 70px 0;
+    display: block;
+}
+
+section.videos h2 {
+    color: #502327;
+    margin: 0 0 50px;
+    display: block;
+}
+
+section.videos .container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;    
+}
+
+section.videos a {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+}
+
+section.videos a figure {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    position: relative;
+}
+
+section.videos > div i {
+    font-size: 36px;
+}
+
+section.videos > div i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+section.videos a h3 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:#502327;
+}
+
+section.videos p {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+section.videos a:hover  {
+    background-color: #502327;
+    text-decoration: none;
+}
+
+section.videos a:hover h3, section.videos a:hover p, section.videos a:hover i {
+    color: rgba(255, 255, 255, 1)
+}
+
+/*   contacto grid  */
+
+section.contacto {
+    padding: 70px 0;
+    margin-top: 70px;
+    display: block;
+    background-color: #3e6f36;
+}
+
+section.contacto h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section.contacto p {
+    color: #fff;
+}
+
+section.contacto .container-grid {
+    display: grid;
+    grid-template-columns: 500px 300px;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;   
+    justify-content: center; 
+}
+
+
+/*   form  */
+
+
+section.contacto form {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 20px;
+}
+
+section.contacto input, section.contacto textarea  {
+    background-color: #518648;
+    border: none;
+    width: 500px;
+    padding-left: 15px;
+    color:white; 
+    font-weight: 700;
+    font-size: 13px;
+}
+
+section.contacto input  {
+    height: 60px;
+}
+
+section.contacto textarea  {
+    height: 150px;
+    padding-top: 20px;
+}
+
+section.contacto input::placeholder, section.contacto textarea::placeholder {
+    color:white; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+section.contacto input:-ms-input-placeholder, section.contacto textarea:-ms-input-placeholder  { 
+    color:white; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+section.contacto input::-webkit-input-placeholder, section.contacto textarea::-webkit-input-placeholder { 
+    color:white; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+section.contacto input::-moz-placeholder, section.contacto textarea::-moz-placeholder { 
+    color:white; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+section.contacto button {
+    background-color: #fff;
+    padding: 7px;
+    border: none;
+    width: 200px;
+    justify-self: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #3e6f36;
+}
+
+section.contacto button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/*   contact data  */
+
+section.contacto article {
+    align-self: center;
+}
+
+section.contacto article i {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 20px 30px 0;
+}
+
+section.contacto article i:before {
+    color: #3e6f36;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+section.contacto article i:hover {
+    background-color: #000;
+    color: #fff
+}
+
+section.contacto article i:hover:before {
+    color: #fff
+}
+
+section.contacto article p {
+    margin-bottom: 10px;
+}
+
+section.contacto article a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+section.contacto article a:hover {
+    color: #000;
+}
+
+/*   footer  */
+
+footer {
+    background-color: #2e5927;
+    padding: 25px 0;
+    display: block;
+    
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+/*   responsive  */
+
+@media screen and (max-width: 600px) {
+
+    section.bio img {
+        width: 320px;
+        height: 320px;
+        border-radius:160px;
+        margin: auto;
+        display: block;        
+    }
+
+    .col33, .col50 {
+        width: 100%
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 70px 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 0px;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    section.bio h2 {
+        margin-top: 30px;
+    }
+    
+    section.bio span {
+        text-align: center;
+        display: block;
+        margin-top: -10px;
+    }
+
+    .container-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.noticias > div.wrapper > div.container-flex > article {
+        width: 100%;
+    }
+
+    section.noticias > div.wrapper > div.container-flex:nth-child(3) > article {
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ec1d25;
+    }
+
+    section.discosletras > div.wrapper > div.container-flex > article {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .carousel-control-prev-icon  {
+        width: 10px;
+        height: 100%;
+        margin-left: -20px;
+    }
+    
+    .carousel-control-next-icon {
+        width: 10px;
+        height: 100%;
+        margin-right: -20px ;
+    }
+
+    section.videos .container-grid {
+        grid-template-columns: 1fr
+    }
+
+    section.contacto{
+        padding: 70px 0 20px;
+
+    }
+    section.contacto .container-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+    }
+
+    section.contacto input, section.contacto textarea {
+        width: 100%;
+    }
+
+    section.contacto article {
+        justify-self: center;
+        text-align: center;
+    }
+
+    section.contacto article i {
+        margin: 0 10px 30px;
+    }
 }

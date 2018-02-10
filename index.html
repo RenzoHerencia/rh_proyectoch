@@ -6,39 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700|Playfair+Display:700,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f5ce782ee9.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        var options = { speed: 1000, easing: 'easeOutCubic' };
+    </script>
     <title>Los Chalchaleros</title>
 </head>
 
     <body>
         <header>
             <a href="index.html">
-                <h1>Chalchaleros</h1>
-                <p>para siempre</p>
+                <h1 class="animated zoomIn">Chalchaleros</h1>
+                <p class="animated zoomIn">para siempre</p>
             </a>
         </header>
 
         <nav>
-            <ul>
-                <li><a href="" class="active">Inicio</a></li>
-                <li><a href="">Biografía</a></li>    
-                <li><a href="">Discos y letras</a></li>
-                <li><a href="">Galería</a></li>
-                <li><a href="">Noticias</a></li>  
-                <li><a href="">Contacto</a></li>  
+            <ul class="smooth-scroll list-unstyled">
+                <li><a data-scroll href="index.html" class="active">Inicio</a></li>
+                <li><a data-scroll href="#bio" >Biografía</a></li>
+                <li><a data-scroll href="#noticias">Noticias</a></li>
+                <li><a data-scroll href="#discosletras">Discos y letras</a></li>
+                <li><a data-scroll href="#galeria">Galería</a></li>                  
+                <li><a data-scroll href="#contacto">Contacto</a></li>  
             </ul>
         </nav>         
        
-        <section class="bio">
+        <section id="bio" class="bio">
             <div class="wrapper">
                 <div class="col50">
-                    <img src="img/img_bio1.jpg" alt="Los Chalchaleros hace unos años">                 
+                    <img src="img/img_bio1.jpg" alt="Los Chalchaleros hace unos años" class="animated zoomIn">                 
                 </div>
-                <div class="col50">
+                <div class="col50" >
                     <h2>Biografía</h2>
-                    <span>40 años de música</span>
-                    <p>Vivamus sollicitudin commodo purus. Sed ac arcu porta, porttitor magna et, vehicula nibh. Etiam gravida orci tellus, sit amet viverra urna sodales ut. Maecenas vitae ligula rhoncus, hendrerit orci rutrum, volutpat risus. Vivamus tellus ex, pellentesque quis laoreet eget, semper ut odio. Mauris accumsan mattis leo, eu faucibus nunc feugiat eu. Nulla leo nulla, posuere et ultrices eget, gravida vel nisi.</p>
-                    <p>Nunc risus nunc, vehicula vitae ultrices a, posuere in libero. Sed sed nulla velit. Suspendisse id consequat purus. In nulla turpis, rhoncus eu lacus in, sagittis varius massa. Quisque eros erat, tempus sed diam et, elementum efficitur odio..</p>
+                    <span >40 años de música</span>
+                    <p>Una noche de 1948 Víctor José “Cocho” Zambrano y Carlos Franco “Pelusa” Sosa, quienes formaban un dúo, al igual que Aldo “el Chivo” Saravia y Juan Carlos “el Gordo” Saravia, se reunieron y decidieron agruparse en un cuarteto.</p>
+                    <p><strong></strong>El seudónimo que eligieron fue Los Chalchaleros.</strong> El nombre deriva del sobrenombre del Zorzal, pájaro que es llamado “chalchalero” por comer el fruto llamado “chal chal”, que crece en el arbusto del mismo nombre.</p>
+                    <a href="#">
+                        Leer más
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
                 <div>
             </div>
         </section>
@@ -46,24 +57,33 @@
         <section class="boxes">
             <article class="col33">
                 <h2>Discos y letras</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sagittis ipsum, id malesuada ipsum mollis at. Aliquam tincidunt gravida lacus, quis vehicula risus. Pellentesque eget pretium odio. Fusce eget libero ut quam aliquam blandit.</p>
-                <a href="">Leer más</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sagittis ipsum, id malesuada ipsum mollis at. Aliquam tincidunt gravida lacus, quis vehicula risus.</p>
+                <a data-scroll href="#discosletras">
+                    Leer más
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
             </article>
 
             <article class="col33">
                     <h2>Galería</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sagittis ipsum, id malesuada ipsum mollis at. Aliquam tincidunt gravida lacus, quis vehicula risus. Pellentesque eget pretium odio. Fusce eget libero ut quam aliquam blandit.</p>
-                    <a href="">Leer más</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sagittis ipsum, id malesuada ipsum mollis at. Aliquam tincidunt gravida lacus, quis vehicula risus.</p>
+                    <a data-scroll href="#galeria">
+                        Leer más
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
             </article>
 
             <article class="col33">
                     <h2>Contacto</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sagittis ipsum, id malesuada ipsum mollis at. Aliquam tincidunt gravida lacus, quis vehicula risus. Pellentesque eget pretium odio. Fusce eget libero ut quam aliquam blandit.</p>
-                    <a href="">Leer más</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet sagittis ipsum, id malesuada ipsum mollis at. Aliquam tincidunt gravida lacus, quis vehicula risus.</p>
+                    <a data-scroll href="#contacto">
+                        Leer más
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
             </article>
         </section>
 
-        <section class="noticias">
+        <section id="noticias" class="noticias">
             <div class="wrapper">
 
                 <h2>noticias</h2>
@@ -128,52 +148,40 @@
 
         </section>   
         
-        <section class="discosletras">
+        <section id="discosletras" class="discosletras">
             <div class="wrapper">
                 <h2>discos y letras</h2>
 
                 <div class="container-flex">
 
                     <article>
+                            <img src="img/disco.jpg" alt="">
+                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
+                            <p>1953</p>
+                    </article>
+
+                    <article>
+                            <img src="img/disco.jpg" alt="">
+                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
+                            <p>1953</p>
+                        </article>
+                        
+                    <article>
+                            <img src="img/disco.jpg" alt="">
+                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
+                            <p>1953</p>
+                    </article>
+
+                    <article>
+                            <img src="img/disco.jpg" alt="">
+                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
+                            <p>1953</p>
+                    </article>
+
+                    <article>
                         <img src="img/disco.jpg" alt="">
                         <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
                         <p>1953</p>
-                    </article>
-
-                    <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
-                    </article>
-
-                    <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
-                        </article>
-                        
-                    <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
-                    </article>
-
-                    <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
-                        </article>
-                        
-                    <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
-                    </article>
-
-                    <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
                     </article>
 
                 </div>
@@ -194,7 +202,7 @@
                                 </ol>        
                             </td>
                             <td>
-                                <h3>De mi esperanza</h3>
+                                <h4>De mi esperanza</h4>
                                 <div class="col50">
                                     <p>
                                         Cuando la noche con su silencio 
@@ -237,7 +245,7 @@
             </div>
         </section>
 
-        <section class="galeria">
+        <section id="galeria" class="galeria">
             <div class="wrapper">
                 <h2>Galería</h2>
                 
@@ -283,117 +291,116 @@
             </div>
         </section>
 
-        <section class="discosletras">
-                <div class="wrapper">
-                    <h2>discos y letras</h2>
-    
-                    <div class="container-flex">
-    
-                        <article>
-                            <img src="img/disco.jpg" alt="">
-                            <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                            <p>1953</p>
-                        </article>
-    
-                        <article>
-                                <img src="img/disco.jpg" alt="">
-                                <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                                <p>1953</p>
-                        </article>
-    
-                        <article>
-                                <img src="img/disco.jpg" alt="">
-                                <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                                <p>1953</p>
-                            </article>
-                            
-                        <article>
-                                <img src="img/disco.jpg" alt="">
-                                <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                                <p>1953</p>
-                        </article>
-    
-                        <article>
-                                <img src="img/disco.jpg" alt="">
-                                <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                                <p>1953</p>
-                            </article>
-                            
-                        <article>
-                                <img src="img/disco.jpg" alt="">
-                                <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                                <p>1953</p>
-                        </article>
-    
-                        <article>
-                                <img src="img/disco.jpg" alt="">
-                                <h3>Éxitos de Los Chalchaleros, volumen 1</h3>
-                                <p>1953</p>
-                        </article>
-    
-                    </div>
-    
-                    <table border="1">
-                            <tr>
-                                <td style="width: 33.33%;">
-                                    <ol>
-                                        <li><a href="">DE MI ESPERANZA</a></li>
-                                        <li><a href="">VIENE CLAREANDO</a></li>
-                                        <li><a href="">SAPO CANCIONERO</a></li>
-                                        <li><a href="">A LOS BOSQUES YO ME INTERNO</a></li>
-                                        <li><a href="">LA LOPEZ PEREYRA</a></li>
-                                        <li><a href="">JAMAS</a></li>
-                                        <li><a href="">LLORARE</a></li>
-                                        <li><a href="">LA NOCHERA</a></li>
-                                        <li><a href="">AMOR Y FIESTA</a></li>                                    
-                                    </ol>        
-                                </td>
-                                <td>
-                                    <h3>De mi esperanza</h3>
-                                    <div class="col50">
-                                        <p>
-                                            Cuando la noche con su silencio 
-                                            <br>traiga a mi copla recuerdos de ayer. 
-                                            <br>En el tambor de la luna verás 
-                                            <br>a mi pena vieja golpear y golpear. 
-                                            <br>
-                                            <br>Quizá el tiempo te aleje de mí, 
-                                            <br>pero en las noches tú siempre vendrás. 
-                                            <br>Vendrás en la sombra muchacha hacia mí 
-                                            <br>tu boca, tu voz, tu triste perfil. 
-                                            <br>
-                                            <br>Se duerme ya el sol, 
-                                            <br>y empiezo a pensar; 
-                                            <br>que para siempre mis sueños serán 
-                                            <br>tenerte en mis brazos, poderte besar.                                      
-                                        </p>
-                                    </div>
-    
-                                    <div class="col50">
-                                        <p>
-                                            Cuando la luna se quiebra en el monte 
-                                            <br>y llene de luz mi soledad. 
-                                            <br>Habrá un beso perdido en la noche, 
-                                            <br>buscando tu boca para descansar. 
-                                            <br>
-                                            <br>Rumiendo está mi guitarra, 
-                                            <br>pedazo de astilla que sabe llorar. 
-                                            <br>Apagó mi canto mi triste nostalgia, 
-                                            <br>quemando maderas de tanto penar. 
-                                            <br>
-                                        </p>
-                                    </div>
-                                    
-                                </td>
-                            </tr>
-            
-                        </table>
-    
+        <section class="videos">
+            <div class="wrapper">
+                <h2>videos</h2>
+
+                <div class="container-grid">
+                    <article>
+                        <a href="">
+                            <figure>
+                                <img src="img/video.jpg" alt="">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </figure>
+                            <h3>Zamba de mi esperanza</h3>
+                            <p>Estudio CM 1996</p>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <figure>
+                                <img src="img/video.jpg" alt="">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </figure>
+                            <h3>Zamba de mi esperanza</h3>
+                            <p>Estudio CM 1996</p>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <figure>
+                                <img src="img/video.jpg" alt="">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </figure>
+                            <h3>Zamba de mi esperanza</h3>
+                            <p>Estudio CM 1996</p>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <figure>
+                                <img src="img/video.jpg" alt="">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </figure>
+                            <h3>Zamba de mi esperanza</h3>
+                            <p>Estudio CM 1996</p>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <figure>
+                                <img src="img/video.jpg" alt="">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </figure>
+                            <h3>Zamba de mi esperanza</h3>
+                            <p>Estudio CM 1996</p>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <figure>
+                                <img src="img/video.jpg" alt="">
+                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                            </figure>
+                            <h3>Zamba de mi esperanza</h3>
+                            <p>Estudio CM 1996</p>
+                        </a>
+                    </article>                 
+
                 </div>
-            </section>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="wrapper">
+                <h2>Contacto</h2>
+                <div class="container-grid">
+
+                    <form action="">
+                        <p>Todos los campos son requeridos</p>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <input type="text" name="phone" id="phone" placeholder="Teléfono">
+                        <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+                        <button type="submit" form="form1" value="Submit">Enviar</button>
+                    </form>
+
+                    <article>                        
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <p>Sanabria 2353 (C1417AZE)<br>Buenos Aires, Argentina</p>
+                        <p>Tel: +54114379-4268</p>
+                        <p>e-mail:&nbsp;<a href="mailto:info@chalchaleros.com">info@chalchaleros.com</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyright ©2018 Los Chalchaleros.</p>
+        </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
     </body>
